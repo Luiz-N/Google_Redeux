@@ -1,0 +1,242 @@
+@import url(reset.css);
+
+#active {
+    color: white;
+    /*font-weight: 500;*/
+}
+
+.sign {
+  float: right;
+  margin-top: 1.5%;
+  padding: .5em 1em;
+  margin-right: 3%;
+  font: .8em helvtica ,sans-serif;
+  color:#666;
+}
+
+
+/* Footer class*/
+.bottom {
+  width: 100%;
+  /*vertical-align: bottom;*/
+  position: absolute;
+  bottom: 0;
+}
+
+/* header/nav classes and rules*/
+
+.nav {
+  background-color: #2d2d2d;
+  width: 100%;
+}
+
+.nav ul{
+    /*margin-left: .5em;*/
+    background-color: #2d2d2d;
+    position: relative;
+    list-style: none;
+    display: block;
+   
+ }
+    .nav ul:after {
+      content: "";  clear: both; display: block;
+    }
+
+ .nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  /*text-align: left;*/
+  border-bottom: solid 1px #bbb;
+  border-left: solid 1px #bbb;
+  border-right: solid 1px #bbb; 
+  z-index: 100;
+  /*box-shadow: 5;*/
+  /*z-index: 2;*/
+ }
+
+.nav li:hover > ul {
+  display: block;
+  
+}
+
+.nav ul li {
+  float: left;
+  color: #bbb;
+  font: .8em helvtica ,sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav ul li a{
+  display: block;
+  padding: .6em .8em;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+      .nav ul li:hover {
+        color: white;
+      }
+
+      .nav ul ul li:hover {
+          color: black;
+          background-color: lightgray;
+      }
+
+.nav ul ul li {
+  /*width: 7em;*/
+  background-color: white;
+  cursor: pointer;
+  padding: 0 1em;
+  float: none;
+  position: relative;
+  font: inherit;
+  color: black;
+  font-weight: bold;
+  /*left: 10%*/
+}
+
+#trick {
+  display: none;
+  background-color: white;
+  color: black;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  font: 1em helvtica ,sans-serif;
+  font-weight: bold;
+  padding: .6em .8em;
+  cursor: pointer;
+  width: 3.5em;
+}
+
+.nav ul li:hover #trick {
+  display: inline-block;
+}
+
+.nav ul ul li:last-child {
+    /*text-align: center;*/
+    border-top: solid 1px #bbb;
+    /*margin: .6em;*/
+    padding: .5em .7em;
+    left: 0;
+}
+
+.arw {
+position: relative;
+border-style: solid dashed dashed;
+border-color: transparent;
+border-top-color: inherit;
+display: -moz-inline-box;
+display: inline;
+border-width: 3px 3px 0;
+left: 5px;
+top: .7em;
+}
+
+.search {
+  margin-top: 11%;
+  text-align: center;
+  padding: 0 15%;
+  width: auto;
+ 
+}
+
+.search img:first-child{
+  display: block;
+  margin: auto;
+  max-width: 275px;
+  width: 27%;
+  min-width: 200px;
+  height: auto;
+  /*left: -50px;*/
+
+}
+
+.search input {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 571px;
+  width: 100%;
+  min-width: 200px;
+  height: 2.6em;
+  font-size: small;
+  font-weight: bold;
+  /*margin: auto;*/
+  margin-top: 2.5% ; 
+  position: relative;
+ background: url(mic.png) no-repeat right;
+}
+.search input:focus {
+  border: 1px solid #0266C8;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+  /*box-shadow: ;*/
+  outline: none;
+  /*border: 2px inset;*/
+
+}
+    #mic {
+      display: inline-block;
+      /*left: 10px;*/
+      position: absolute;
+      /*top: .55em;*/
+      right: 2px;
+      bottom: 4px;
+    }
+
+.trick2 {
+  display: inline-block;
+  max-width: 571px;
+  width: 60%;
+  min-width: 200px;
+  font-size: 1.2em;
+  /*margin: auto;*/
+  /*margin-top: 1.5% ; */
+  position: relative;
+
+}
+
+.search button {
+  /*width: 30%;*/
+  margin: 1%;
+
+ 
+}
+ 
+.buttons {
+  margin: auto;
+  padding: 6px 1%;
+  text-align: center;
+} 
+ 
+.nav2 {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  color: #666;
+  font: .8em helvtica ,sans-serif;
+  margin-right: 1em;
+
+}
+
+.nav2 li {
+  display: inline;
+} 
+ 
+.nav2 a {
+  float: right;
+  /*display:inline;*/
+  padding: .7em;
+  text-decoration: inherit;
+  color: inherit;
+  
+}
+
+.nav2 a:hover {
+  background-color: lightgray;
+  color:#333;
+}
