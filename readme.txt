@@ -1,2 +1,0 @@
-This is my first README file... It was created in nano via a bash terminal. My terminal has green font and
-a black background like the matrix.
